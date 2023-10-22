@@ -6,7 +6,7 @@ const User = ({ formId, formFields }) => {
 
   const handleSubmitForm = async () => {
     try {
-      const response = await submitForm();
+      const response = await submitForm(formResponse);
       if (response.status === 200) {
         alert('Form submitted successfully');
       } else {
@@ -17,7 +17,7 @@ const User = ({ formId, formFields }) => {
       alert('Error submitting the form');
     }
   }
-  
+
   return (
     <div>
       <h1>Submit Form</h1>
@@ -35,17 +35,9 @@ const User = ({ formId, formFields }) => {
               }}
             />
           ) : (
-            // <div>
-            //   {/* Render radio, checkbox, or dropdown options based on the field type */}
-            //   {field.type === 'radio' ? (
-            //     /* Render radio options here */
-            //   ) : field.type === 'checkbox' ? (
-            //     /* Render checkbox options here */
-            //   ) : field.type === 'dropdown' ? (
-            //     /* Render dropdown options here */
-            //   ) : null}
-            // </div>
-            <h1>sdfs</h1>
+            <div>
+              <h1>r</h1>
+            </div>
           )}
         </div>
       ))}

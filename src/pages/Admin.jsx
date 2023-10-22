@@ -17,7 +17,7 @@ const Admin = () => {
 
   const handleCreateForm = async () => {
     try {
-      const response = await createForm();
+      const response = await createForm(formData);
       if (response.status === 200) {
         alert('Form created successfully');
       } else {
